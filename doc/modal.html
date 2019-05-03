@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção aprenderemos como usar modal em seu projeto
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Modal simples</h4>
+          <p>
+            Para usar modal em seu projeto é necessário uso de <span class="t-green t-bold">javascript</span>
+            e de um botão que será usado como gatilho para exibir o modal.
+            Abaixo é apresentado um exemplo simples de modal tanto seu código HTML como o Javascript respectivamente.
+          </p>
+
+          <button class="btn red" id="modal-show">Exibir modal</button>
+          <div id="myModal" class="modal">
+            <div class="modal-card">
+              <span class="close">×</span>
+              <div class="modal-content">
+                modal simples
+              </div>
+            </div>
+          </div>
+          <script>
+            let modal = document.getElementById('myModal');
+            document.getElementById("modal-show").addEventListener('click', () => {
+              modal.style.display = "block"; 
+            });
+            document.getElementsByClassName("close")[0].addEventListener('click', () => {
+              modal.style.display = "none";
+            });
+            window.addEventListener('click', (event) => {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            });
+          </script>
+          <pre><code class="language-markup">
+&lt;button class="btn red" id="modal-show">Exibir modal&lt;/button>
+&lt;!-- começo do modal -->
+&lt;div id="myModal" class="modal">
+  &lt;div class="modal-card">
+    &lt;span class="close">×&lt;/span>
+    &lt;div class="modal-content">
+      modal simples
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+&lt;!-- fim do modal -->
+
+          </code></pre>
+          <pre><code class="language-javascript">
+  let modal = document.getElementById('myModal');
+  document.getElementById("modal-show").addEventListener('click', () => {
+    modal.style.display = "block"; 
+  });
+  document.getElementsByClassName("close")[0].addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+  window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+          </code></pre>
+          <br><br>
+          <p>
+            Caso queria adicionar um titulo e footer ao seu modal você pode. Veja um exemplo abaixo:
+          </p>
+
+          <button class="btn green" id="modal-show2">Exibir modal</button>
+          <div id="myModal2" class="modal">
+            <div class="modal-card">
+              <span class="close">×</span>
+              <div class="modal-title">
+                <h2>Titulo do modal</h2>
+              </div>
+          
+              <div class="modal-content">
+                texto e mais texto do modal
+              </div>
+          
+              <div class="modal-footer">
+                footer do modal
+              </div>
+            </div>
+          </div>
+          <script>
+            let modal2 = document.getElementById('myModal2');
+            document.getElementById("modal-show2").addEventListener('click', () => {
+              modal2.style.display = "block"; 
+            });
+            document.getElementsByClassName("close")[1].addEventListener('click', () => {
+              modal2.style.display = "none";
+            });
+            window.addEventListener('click', (event) => {
+              if (event.target == modal2) {
+                modal2.style.display = "none";
+              }
+            });
+          </script>
+          <pre><code class="language-markup">
+&lt;button class="btn green" id="modal-show">Exibir modal&lt;/button>
+&lt;!-- começo do modal -->
+&lt;div id="myModal" class="modal">
+  &lt;div class="modal-card">
+    &lt;span class="close">×&lt;/span>
+    &lt;div class="modal-title">
+      &lt;h2>Titulo do modal&lt;/h2>
+    &lt;/div>
+
+    &lt;div class="modal-content">
+      texto e mais texto do modal
+    &lt;/div>
+
+    &lt;div class="modal-footer">
+      footer do modal
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+&lt;!-- fim do modal -->
+
+          </code></pre>
+          <pre><code class="language-javascript">
+  let modal = document.getElementById('myModal');
+  document.getElementById("modal-show").addEventListener('click', () => {
+    modal.style.display = "block"; 
+  });
+  document.getElementsByClassName("close")[0].addEventListener('click', () => {
+    modal.style.display = "none";
+  });
+  window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+          </code></pre>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

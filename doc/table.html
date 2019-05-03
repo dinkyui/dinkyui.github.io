@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+            Nesta seção iremos aprender como criar tabelas e apresentar as classes que podemos utilizar
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Tabela sem classes</h3>
+          <p>
+            A tabela sem uso de classes ja possui de certa forma um estilo customizado, veja um exemplo
+            abaixo:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jardel Gonçalves</td>
+                <td>jardel@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mara Vitoória</td>
+                <td>mara@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Antonio Carlos</td>
+                <td>toin@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Diego Gaspar</td>
+                <td>diego@dinkyui.com</td>
+              </tr>
+            </tbody> 
+          </table>
+          <pre><code class="language-markup">  
+&lt;table>
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>Nome&lt;/th>
+      &lt;th>Email&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>1&lt;/td>
+      &lt;td>Jardel&lt;/td>
+      &lt;td>jardel@dinky.com&lt;/td>
+    &lt;/tr>
+    ...
+  &lt;/tbody> 
+&lt;/table>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Cor do cabeçalho</h3>
+          <p>
+            É possível alterar tanto a cor de fundo do cabeçalho como do texto, para isso basta adicionar
+            o nome de uma cor como classe da tag <span class="t-blue t-bold">thead</span> para adicionar
+            uma cor de fundo ao cabeçalho e para alterar a cor do texto, basta adicionar o prefixo
+            <span class="t-red t-bold">t-</span> e o nome da cor. Veja um exemplo:
+          </p>
+          <table>
+            <thead class="red t-white">
+              <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jardel Gonçalves</td>
+                <td>jardel@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mara Vitoória</td>
+                <td>mara@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Antonio Carlos</td>
+                <td>toin@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Diego Gaspar</td>
+                <td>diego@dinkyui.com</td>
+              </tr>
+            </tbody> 
+          </table>
+          <pre><code class="language-markup">  
+&lt;table>
+  &lt;thead class="red t-white">
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>Nome&lt;/th>
+      &lt;th>Email&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>1&lt;/td>
+      &lt;td>Jardel&lt;/td>
+      &lt;td>jardel@dinky.com&lt;/td>
+    &lt;/tr>
+    ...
+  &lt;/tbody> 
+&lt;/table>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Realçar linhas</h3>
+          <p>
+            Outra classe interessante é a <span class="t-red t-bold">highlight</span> que
+            realça (destaca) as linhas ao passar o mouse sob elas. Veja como usá-la:
+          </p>
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jardel Gonçalves</td>
+                <td>jardel@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mara Vitoória</td>
+                <td>mara@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Antonio Carlos</td>
+                <td>toin@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Diego Gaspar</td>
+                <td>diego@dinkyui.com</td>
+              </tr>
+            </tbody> 
+          </table>
+          <pre><code class="language-markup">  
+&lt;table class="highlight">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>Nome&lt;/th>
+      &lt;th>Email&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>1&lt;/td>
+      &lt;td>Jardel&lt;/td>
+      &lt;td>jardel@dinky.com&lt;/td>
+    &lt;/tr>
+    ...
+  &lt;/tbody> 
+&lt;/table>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Linhas listradas</h3>
+          <p>
+            A classe <span class="t-red t-bold">striped</span> faz com que as linhas de uma tabela tenham
+            as cores alternadas. Veja abaixo como usá-la:
+          </p>
+          <table class="striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jardel Gonçalves</td>
+                <td>jardel@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mara Vitoória</td>
+                <td>mara@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Antonio Carlos</td>
+                <td>toin@dinkyui.com</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Diego Gaspar</td>
+                <td>diego@dinkyui.com</td>
+              </tr>
+            </tbody> 
+          </table>
+          <pre><code class="language-markup">  
+&lt;table class="striped">
+  &lt;thead>
+    &lt;tr>
+      &lt;th>#&lt;/th>
+      &lt;th>Nome&lt;/th>
+      &lt;th>Email&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>1&lt;/td>
+      &lt;td>Jardel&lt;/td>
+      &lt;td>jardel@dinky.com&lt;/td>
+    &lt;/tr>
+    ...
+  &lt;/tbody> 
+&lt;/table>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Tabela responsiva</h3>
+          <p>
+            As vezes quando estamos listando dados em uma tabela e vemos através de dispositivos
+            com telas maiores as tabelas se comportam de forma desejada, más, quando estamos em
+            dispositivos menores infelizmente as tabelas tende a ter outro comportamento afetando
+            a visibilidade dos dados. Por isso, criamos a classe <span class="t-red t-bold">responsive</span>
+            que ajudar a melhorar a visualização dos dados em telas menores criando uma barra horizontal.
+            Veja um exemplo (caso esteja acessando por um computador diminua a largura do seu navegador). 
+          </p>
+          <div class="responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nome</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Jardel Gonçalves</td>
+                  <td>jardel@dinkyui.com</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mara Vitoória</td>
+                  <td>mara@dinkyui.com</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Antonio Carlos</td>
+                  <td>toin@dinkyui.com</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Diego Gaspar</td>
+                  <td>diego@dinkyui.com</td>
+                </tr>
+              </tbody> 
+            </table>
+          </div>
+          <pre><code class="language-markup"> 
+&lt;div class="responsive">
+  &lt;table>
+    &lt;thead>
+      &lt;tr>
+        &lt;th>#&lt;/th>
+        &lt;th>Nome&lt;/th>
+        &lt;th>Email&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>1&lt;/td>
+        &lt;td>Jardel&lt;/td>
+        &lt;td>jardel@dinky.com&lt;/td>
+      &lt;/tr>
+      ...
+    &lt;/tbody> 
+  &lt;/table>
+&lt;/div>
+          </code></pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar red">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>Nesta seção aprenderemos como aplicar o componente de paginação em seu projeto</p>
+
+        <div class="col-12 sm-12 md-12 lg-12" style="margin-top:50px">
+          <h3>Paginação</h3>
+          <p>
+            Para usar o componente de paginação é bem simples, basta adicionar uma <span class="t-blue t-bold">div</span>
+            com a classe <span class="t-red t-bold">paginate</span>. Veja um exemplo abaixo:
+          </p>
+          <div class="pagination">
+            <a href="#">«</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>            
+            <a href="#">11</a>
+            <a href="#">»</a>
+          </div> 
+          <div class="col-12 md-7" style="margin-top:150px;">
+            <pre><code class="language-markup">
+
+  &lt;div class="pagination">
+    &lt;a href="#">«&lt;/a>
+    &lt;a href="#">1&lt;/a>
+    &lt;a class="active" href="#">2&lt;/a>
+    &lt;a href="#">3&lt;/a>
+    &lt;a href="#">4&lt;/a>
+    &lt;a href="#">5&lt;/a>
+    ...
+    &lt;a href="#">11&lt;/a>
+    &lt;a href="#">»&lt;/a>
+  &lt;/div> 
+          
+            </code></pre>
+          </div>
+        </div>
+        <div class="col-12 sm-12 md-12 lg-12" style="margin-top:50px">
+          <h3>Alterando a cor da página ativada</h3>
+          <p>
+            A classe <span class="t-red t-bold">active</span> possui uma cor padrão (vermelho),
+            caso deseje alterar, basta adicionar o nome de uma cor como classe. Veja um exemplo abaixo:
+          </p>
+          <div class="pagination">
+            <a href="#">«</a>
+            <a href="#">1</a>
+            <a class="active blue" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>            
+            <a href="#">11</a>
+            <a href="#">»</a>
+          </div> 
+          <div class="col-12 md-7" style="margin-top:150px;">
+            <pre><code class="language-markup">
+
+  &lt;div class="pagination">
+    &lt;a href="#">«&lt;/a>
+    &lt;a href="#">1&lt;/a>
+    &lt;a class="active blue" href="#">2&lt;/a>
+    &lt;a href="#">3&lt;/a>
+    &lt;a href="#">4&lt;/a>
+    &lt;a href="#">5&lt;/a>
+    ...
+    &lt;a href="#">11&lt;/a>
+    &lt;a href="#">»&lt;/a>
+  &lt;/div> 
+          
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

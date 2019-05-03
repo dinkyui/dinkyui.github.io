@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção, aprenderemos as diversas formas de usar cards em seu projeto
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Simples card</h4>
+          <p>
+            É possível criar um card usando apenas um classe, veja o exemplo abaixo:
+          </p>
+          <div class="card">Este é um simples card</div>
+          <pre><code class="language-markup">
+  &lt;div class="card">Este é um simples card&lt;/div>            
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Card com titulo e subtitulo</h4>
+          <p>
+            Este cartão ja possui mais classes que o anterior, porém, possui uma divisão
+            que facilita seu entendimento. Veja abaixo:
+          </p>
+          <div class="card">
+            <div class="card-title">
+              <span>Meu titulo</span>
+              <p class="card-subtitle">
+                Meu subtitulo
+              </p>
+            </div>
+            <div class="card-content">
+              Um simples card com titulo e subtitulo
+            </div>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="card">
+  &lt;div class="card-title">
+    &lt;span>Meu titulo&lt;/span>
+    &lt;p class="card-subtitle">
+      Meu subtitulo
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="card-content">
+    Um simples card com titulo e subtitulo
+  &lt;/div>
+&lt;/div> 
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Adicionando um footer</h4>
+          <p>
+            Além das classes utilizadas anteriormente, é possivel adicionar um footer no card
+            com a classe <span class="t-red t-bold">card-footer</span>. Veja um exemplo:
+          </p>
+          <div class="card">
+            <div class="card-content">
+              Um card com footer
+            </div>
+            <div class="card-footer">
+              <p>footer do card</p>
+            </div>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="card">
+  &lt;div class="card-content">
+    Um card com footer
+  &lt;/div>
+  &lt;div class="card-footer">
+    &lt;p>footer do card&lt;/p>
+  &lt;/div>
+&lt;/div> 
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Adicionando imagem</h4>
+          <p>
+            Existem duas formas de adicionar imagem em um card, essa que será apresentada, utilizando
+            a classe <span class="t-red t-bold">card</span> para criar o card, porém, existe outra
+            forma de criar card que mostraremos depois.
+          </p>          
+          <div class="card">
+            <div class="card-image">
+              <img src="https://cdn.pixabay.com/photo/2016/01/13/01/36/bagan-1137015_960_720.jpg" alt="Foto">
+            </div>
+            <div class="card-content">
+              <p>Um card com imagem e texto</p>
+            </div>
+          </div>  
+          <pre><code class="language-markup">
+&lt;div class="card">
+  &lt;div class="card-image">
+    &lt;img src="https://cdn.pixabay.com/photo/2016/01/13/01/36/bagan-1137015_960_720.jpg" alt="Foto">
+  &lt;/div>
+  &lt;div class="card-content">
+    &lt;p>Um card com imagem e texto&lt;/p>
+  &lt;/div>
+&lt;/div> 
+          </code></pre>
+          <p>
+            A outra forma de criar card é usando direto a classe <span class="t-red t-bold">card-image</span>
+            aconselhamos o seu uso quando necessita criar um card onde a imagem ocupa 100% o card ou ocupe 100%
+            a largura do card. Veja um exemplo abaixo:
+          </p>          
+            <div class="card-image">
+              <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/dawn-190055_960_720.jpg" alt="Foto">
+              <div class="card-content">
+                <p>card com imagem ocupando 100% sua largura</p>
+              </div>
+            </div>
+          <pre><code class="language-markup">
+&lt;div class="card-image">
+  &lt;img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/dawn-190055_960_720.jpg" alt="Foto">
+  &lt;div class="card-content">
+    &lt;p>card com imagem ocupando 100% sua largura&lt;/p>
+  &lt;/div>
+&lt;/div>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Alterando cor de fundo</h4>
+          <p>
+            É possível alterar a cor de fundo de um card, para isso, é preciso adicionar como classe
+            o nome de uma cor (ver <a href="/doc/color.html">Paleta de cores</a>). Veja um exemplo abaixo:
+          </p>
+          <div class="card yellow-light">Cor de fundo yellow-light</div>
+          <pre><code class="language-markup">
+&lt;div class="card yellow-light">Cor de fundo yellow-light&lt;/div>
+          </code></pre>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

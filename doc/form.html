@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção apresentaremos como usar os componentes de um formulario.
+        </p>
+        
+        <div class="col-12 md-8 push-md-2">    
+          <h4>Formulario básico</h4>
+          <p>
+            Abaixo é apresentado um formulário básico.
+          </p>
+          <form action="#">
+            <div class="form-group">
+              <label for="forNameExample">Nome</label>
+              <input type="text" name="nome" placeholder="Insira seu nome">
+            </div>
+            <div class="form-group">
+              <label for="forEmailExample">Email</label>
+              <input type="email" name="email" placeholder="Insira um email">
+            </div>
+            <div class="form-group">
+              <label for="forPasswordExample">Senha</label>
+              <input type="password" name="senha" placeholder="Insira sua senha">
+            </div>
+          </form>
+          <pre><code class="language-markup">
+&lt;form action="#">
+  &lt;div class="form-group">
+    &lt;label for="forNameExample">Nome&lt;/label>
+    &lt;input type="text" name="nome" placeholder="Insira seu nome">
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="forEmailExample">Email&lt;/label>
+    &lt;input type="email" name="email" placeholder="Insira um email">
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="forPasswordExample">Senha&lt;/label>
+    &lt;input type="password" name="senha" placeholder="Insira sua senha">
+  &lt;/div>
+&lt;/form>
+          </code></pre>
+        </div>          
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">    
+          <h4>Input desabilitado</h4>
+          <div class="form-group">
+            <label for="forNameExample">Nome</label>
+            <input type="text" name="nome" value="Jardel Gonçalves" disabled>
+          </div>
+          <pre><code class="language-markup">
+
+  &lt;div class="form-group">
+    &lt;label for="forNameExample">Nome&lt;/label>
+    &lt;input type="text" name="nome" value="Jardel Gonçalves" disabled>
+  &lt;/div>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Select dropdown</h4>
+
+          <div class="select">
+            <select>
+              <option>--Select--</option>
+              <option>Hello 1</option>
+              <option>Hello 2</option>
+              <option>Hello 3</option>
+              <option>Hello 4</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="select">
+  &lt;select>
+    &lt;option>--Select--&lt;/option>
+    &lt;option>Hello 1&lt;/option>
+    &lt;option>Hello 2&lt;/option>
+    &lt;option>Hello 3&lt;/option>
+    &lt;option>Hello 4&lt;/option>
+  &lt;/select>
+  &lt;div class="select_arrow">&lt;/div>
+&lt;/div>
+          </code></pre>
+        </div>
+        
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Textarea</h4>
+
+          <div class="form-group">
+            <label for="forDescribeExample">Descrição</label>
+            <textarea name="descricao" id="" cols="30" rows="10"></textarea>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="form-group">
+  &lt;label for="forDescribeExample">Descrição&lt;/label>
+  &lt;textarea name="descricao" id="" cols="30" rows="10">&lt;/textarea>
+&lt;/div>                  
+          </code></pre>
+        </div>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Input date</h4>
+
+          <div class="form-group">
+            <label for="forDateExample">Data de Nascimento</label>
+            <input type="date" name="dataNascimento">
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="form-group">
+  &lt;label for="forDateExample">Data de Nascimento&lt;/label>
+  &lt;input type="date" name="dataNascimento">
+&lt;/div>                  
+          </code></pre>
+        </div>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Checkbox</h4>
+          <label class="form-checkbox">Checkbox 1
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="form-checkbox">Checkbox 2
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+          </label>
+          <pre><code class="language-markup">
+&lt;label class="form-checkbox">Checkbox 1
+  &lt;input type="checkbox">
+  &lt;span class="checkmark">&lt;/span>
+&lt;/label>
+&lt;label class="form-checkbox">Checkbox 1
+  &lt;input type="checkbox" checked>
+  &lt;span class="checkmark">&lt;/span>
+&lt;/label>
+          </code></pre>
+        </div>
+
+        <div class="col-12md-8 push-md-2" style="margin-top:80px">
+          <h4>Radio</h4>
+          <label class="form-checkbox">Radio 1
+            <input type="radio" name="radio">
+            <span class="checkradio"></span>
+          </label>
+          <label class="form-checkbox">Radio 2
+            <input type="radio" name="radio" checked>
+            <span class="checkradio"></span>
+          </label>
+          <pre><code class="language-markup">
+&lt;label class="form-checkbox">Radio 1
+  &lt;input type="radio" name="radio">
+  &lt;span class="checkradio">&lt;/span>
+&lt;/label>
+&lt;label class="form-checkbox">Radio 2
+  &lt;input type="radio" name="radio" checked>
+  &lt;span class="checkradio">&lt;/span>
+&lt;/label>
+          </code></pre>
+        </div>
+
+        <div class="col-12md-8 push-md-2" style="margin-top:80px">
+          <h4>On/Off Switch</h4>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            </label>
+          </div>      
+          <pre><code class="language-markup">
+&lt;div class="onoffswitch">
+  &lt;input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+  &lt;label class="onoffswitch-label" for="myonoffswitch">
+    &lt;span class="onoffswitch-inner">&lt;/span>
+    &lt;span class="onoffswitch-switch">&lt;/span>
+  &lt;/label>
+&lt;/div>
+          </code></pre>
+        </div>
+
+        <div class="col-12md-8 push-md-2" style="margin-top:80px">
+          <h4>Radio</h4>
+          <input type="range" class="range" min="0" max="100">
+          <pre><code class="language-markup">
+  &lt;input type="range" class="range" min="0" max="100">
+          </code></pre>
+        </div>
+
+        <div class="col-12md-8 push-md-2" style="margin-top:80px">
+          <h4>Upload de arquivo</h4>
+          <div class="upload-file">
+            <button class="selected-file">Escolher arquivo</button>
+            <input type="file" name="meu_arquivo" />
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="upload-file">
+  &lt;button class="selected-file">Escolher arquivo&lt;/button>
+  &lt;input type="file" name="meu_arquivo" />
+&lt;/div>
+          </code></pre>
+          <p>
+            Você pode alterar a cor do botão utilizando o nome da cor que deseja como classe
+            do botão.
+          </p>
+          <div class="upload-file">
+            <button class="selected-file indigo">Escolher arquivo</button>
+            <input type="file" name="meu_arquivo" />
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="upload-file">
+  &lt;button class="selected-file indigo">Escolher arquivo&lt;/button>
+  &lt;input type="file" name="meu_arquivo" />
+&lt;/div>
+          </code></pre>
+          <p>
+            Caso deseje exibir o nome do arquivo, é necessário utilizar javascript, veja um exemplo
+            abaixo:
+          </p>
+          <div class="upload-file">
+            <button class="selected-file indigo">Escolher arquivo</button>
+            <input type="file" id="myfile" name="meu_arquivo" />
+            <span class="filename-upload" id="filename">Nenhum arquivo selecionado</span>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="upload-file">
+  &lt;button class="selected-file indigo">Escolher arquivo&lt;/button>
+  &lt;input type="file" id="myfile" name="meu_arquivo" />
+  &lt;span class="filename-upload" id="filename">Nenhum arquivo selecionado&lt;/span>
+&lt;/div>
+          </code></pre>
+          <pre><code class="language-javascript">
+var file = document.getElementById("myfile");
+file.onchange = function(){
+  if(file.files.length > 0){
+    document.getElementById('filename').innerHTML = file.files[0].name;
+  }
+};
+          </code></pre>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+  <script>
+    var file = document.getElementById("myfile");
+      file.onchange = function(){
+      if(file.files.length > 0)
+      {
+        document.getElementById('filename').innerHTML = file.files[0].name;
+      }
+    };
+
+  </script>
+</body>
+</html>

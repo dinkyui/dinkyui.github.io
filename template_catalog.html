@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catalog</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/dinkyui.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar green">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <a href="#">Catalog</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="#">Home</a>
+      <a href="#">Link</a>
+    </div>
+  </nav><!-- fim Navbar -->
+  
+  <div class="slider-wrapper"> <!-- inicio slideshow -->
+    <div class="slider">
+      <!-- Imagem 1 -->
+      <input type="radio" name="slidershow" id="img-1" class="trigger" checked="checked">
+      <div class="slide">
+        <div class="slide-figure">
+          <img class="slide-img" src="https://cdn.pixabay.com/photo/2019/04/06/20/56/spring-4108380_960_720.jpg">
+          <div class="slide-caption slide-caption-taped">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod dui sed ex sodales pulvinar.
+              Quisque vestibulum, ante at luctus cursus.
+            </p>
+          </div>
+        </div>
+      </div> <!-- fim Imagem 1 -->
+      <!-- Imagem 2 -->
+      <input type="radio" name="slidershow" id="img-2" class="trigger">
+      <div class="slide">
+        <div class="slide-figure">
+          <img class="slide-img" src="https://cdn.pixabay.com/photo/2016/01/08/17/06/poppy-1128683_960_720.jpg">
+          <div class="slide-caption slide-caption-taped">
+            <p>
+              Nullam venenatis semper nunc, at interdum libero dictum vel. Nunc ac magna mattis, accumsan elit vel,
+              vehicula purus. Curabitur vitae nisi non nulla blandit maximus.
+            </p>
+          </div>
+        </div>
+      </div> <!-- fim Imagem 2 -->
+      <!-- Imagem 3 -->
+      <input type="radio" name="slidershow" id="img-3" class="trigger">
+      <div class="slide">
+        <div class="slide-figure">
+          <img class="slide-img" src="https://cdn.pixabay.com/photo/2013/04/03/21/25/cereals-100263_960_720.jpg">
+          <div class="slide-caption slide-caption-taped">
+            <p>
+              tincidunt. Cras congue dolor sed est aliquam, eget facilisis neque molestie. Donec elit est, semper in
+              commodo sit amet, aliquet ut lectus.
+            </p>
+          </div>
+        </div>
+      </div> <!-- fim Imagem 2 -->
+
+    </div>
+    <!-- labels (bolinhas) de cada imagem -->
+    <ul class="slider-nav slider-nav-right">
+      <li class="slider-nav_item">
+        <label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-1"></label>
+      </li>
+      <li class="slider-nav_item">
+        <label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-2"></label>
+      </li>
+      <li class="slider-nav_item">
+        <label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-3"></label>
+      </li>
+    </ul> <!-- fim labels (bolinhas) -->
+  </div> <!-- fim slideshow -->
+  
+  <!-- Conteudo -->
+  <div class="container">
+    <div class="row"> <!-- row 1 -->
+      <!-- titulo -->
+      <div class="col-12 md-12 lg-12 center">
+        <hr class="dashed">
+        <h1 class="t-grey-darken">Plantas catalogadas recentemente</h1>
+      </div> <!-- fim titulo -->
+      <!-- card 1 -->
+      <div class="col-12 sm-6 md-4 lg-3">
+        <div class="card-image">
+          <img src="https://cdn.pixabay.com/photo/2016/07/30/13/16/dandelion-1557110_960_720.jpg" alt="Foto">
+          <div class="card-content">
+            <div class="center">
+              <h5>Dente-de-leão</h5>
+            </div>
+            <p class="justify">
+              Sed at consectetur nunc. Fusce fringilla lorem vel massa sodales congue.
+              Nam faucibus ex est, quis elementum augue interdum non. 
+            </p>
+            <a href="#" class="btn green btn-block">Ver</a>
+          </div>
+        </div>
+      </div><!-- fim card 1 -->
+      <!-- card 2 -->
+      <div class="col-12 sm-6 md-4 lg-3">
+        <div class="card-image">
+          <img src="https://cdn.pixabay.com/photo/2016/08/04/09/19/marigold-1568646_960_720.jpg" alt="Foto">
+          <div class="card-content">
+            <div class="center">
+              <h5>Malmequer</h5>
+            </div>
+            <p class="justify">
+              Sed at consectetur nunc. Fusce fringilla lorem vel massa sodales congue.
+              Nam faucibus ex est, quis elementum augue interdum non. 
+            </p>
+            <a href="#" class="btn green btn-block">Ver</a>
+          </div>
+        </div>
+      </div><!-- fim card 2 -->
+      <!-- card 3 -->
+      <div class="col-12 sm-6 md-4 lg-3">
+        <div class="card-image">
+          <img src="https://cdn.pixabay.com/photo/2019/04/20/11/57/spring-4141645_960_720.jpg" alt="Foto">
+          <div class="card-content">
+            <div class="center">
+              <h5>Magnólia</h5>
+            </div>
+            <p class="justify">
+              Sed at consectetur nunc. Fusce fringilla lorem vel massa sodales congue.
+              Nam faucibus ex est, quis elementum augue interdum non. 
+            </p>
+            <a href="#" class="btn green btn-block">Ver</a>
+          </div>
+        </div>
+      </div> <!-- fim card 3 -->
+      <!-- card 4 -->
+      <div class="col-12 sm-6 md-4 lg-3">
+        <div class="card-image">
+          <img src="https://cdn.pixabay.com/photo/2015/01/28/02/35/lotus-614421_960_720.jpg" alt="Foto">
+          <div class="card-content">
+            <div class="center">
+              <h5>Lótus</h5>
+            </div>
+            <p class="justify">
+              Sed at consectetur nunc. Fusce fringilla lorem vel massa sodales congue.
+              Nam faucibus ex est, quis elementum augue interdum non. 
+            </p>
+            <a href="#" class="btn green btn-block">Ver</a>
+          </div>
+        </div>
+      </div> <!-- fim card 4 -->
+    </div> <!-- fim row 1 -->
+    <div class="row" style="margin-top:80px;"> <!-- row 2 -->
+      <!-- titulo -->
+      <div class="col-12 md-12 center">
+        <hr class="dashed">       
+        <h1 class="t-grey-darken">Sobre nós</h1> 
+      </div><!-- fim titulo -->
+      <!-- coluna 1 (sobre nós) -->
+      <div class="col-12 md-4">
+        <div class="center">
+          <i class="material-icons t-green" style="font-size: 80px">grade</i>
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Praesent sed felis at nunc faucibus placerat. Vestibulum ornare interdum est,
+            eget consectetur ante gravida eget. Proin accumsan felis bibendum, blandit ligula non,
+            imperdiet nisl. Nulla facilisi. Etiam in tortor turpis. Aliquam ornare odio eu egestas
+            ultrices. Nunc sed nisl eget ipsum posuere finibus. In ac ante varius, varius ante sed,
+            molestie ex. Phasellus vel sodales odio, at lacinia ex.
+          </p>
+        </div>
+      </div><!-- fim coluna 1 (sobre nós) -->
+      <!-- coluna 2 (sobre nós) -->
+      <div class="col-12 md-4">
+        <div class="center">
+          <i class="material-icons t-green" style="font-size: 80px">language</i>
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Praesent sed felis at nunc faucibus placerat. Vestibulum ornare interdum est,
+            eget consectetur ante gravida eget. Proin accumsan felis bibendum, blandit ligula non,
+            imperdiet nisl. Nulla facilisi. Etiam in tortor turpis. Aliquam ornare odio eu egestas
+            ultrices. Nunc sed nisl eget ipsum posuere finibus. In ac ante varius, varius ante sed,
+            molestie ex. Phasellus vel sodales odio, at lacinia ex.
+          </p>
+        </div>
+      </div><!-- fim coluna 2 (sobre nós) -->
+      <!-- coluna 3 (sobre nós) -->
+      <div class="col-12 md-4">
+        <div class="center">
+          <i class="material-icons t-green" style="font-size: 80px">settings</i>
+          <h4>Lorem Ipsum</h4>
+          <p>
+            Praesent sed felis at nunc faucibus placerat. Vestibulum ornare interdum est,
+            eget consectetur ante gravida eget. Proin accumsan felis bibendum, blandit ligula non,
+            imperdiet nisl. Nulla facilisi. Etiam in tortor turpis. Aliquam ornare odio eu egestas
+            ultrices. Nunc sed nisl eget ipsum posuere finibus. In ac ante varius, varius ante sed,
+            molestie ex. Phasellus vel sodales odio, at lacinia ex.
+          </p>
+        </div>
+      </div> <!-- fim coluna 3 (sobre nós) -->
+    </div> <!-- fim row 2 -->
+  </div> <!-- fim conteudo -->
+
+  <!-- footer -->
+  <footer class="page green">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Catalog</span>. Todos os direitos reservados.
+    </div>
+  </footer> <!-- fim footer -->
+</body>
+</html>

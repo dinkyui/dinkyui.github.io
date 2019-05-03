@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>Nesta seção apresentaremos como usar os badges que são rótulos de notificação</p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:50px">
+          <h4>Aplicando badges</h4>
+          <p>
+            Para aplicar badges, basta adicionar um elemento <span class="t-blue t-bold">span</span>
+            com a classe <span class="t-red t-bold">badge</span> tendo como conteúdo que irá ser
+            exibido. Veja um exemplo abaixo:
+          </p>
+          <button class="btn blue">
+            Meu botão
+            <span class="badge">4</span>
+          </button>
+          <div class="col-12 sm-12 md-6">
+            <pre><code class="language-markup">
+  &lt;button class="btn blue">
+    Meu botão
+    &lt;span class="badge">4&lt;/span>
+  &lt;/button>
+            </code></pre>
+          </div>
+        </div>
+        <div class="col-12 sm-12 md-8 push-md-2" style="margin-top:50px">
+          <h4>Alterando a cor do badge</h4>
+          <p>
+            Para alterar a cor do badge, basta adicionar o nome da cor como classe do elemento
+            <span class="t-blue t-bold">span</span>. Veja:
+          </p>
+          <button class="btn red">
+            Meu botão
+            <span class="badge blue">4</span>
+          </button>
+          <div class="col-12 sm-12 md-6">
+            <pre><code class="language-markup">
+  &lt;button class="btn red">
+    Meu botão
+    &lt;span class="badge blue">4&lt;/span>
+  &lt;/button>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

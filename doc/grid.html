@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+  <style>
+    .block-grid {
+      padding: 7px 7px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      background-color: #fd9898;
+      border: 1px solid #bb6a6a;
+      color: #000000;
+    }
+    .block-grid-main {
+      padding: 7px 7px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      background-color: #d36c6c;
+      border: 1px solid #360808;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta etapa será apresentado o sistema de grid da <span class="t-red t-bold">Dinky UI CSS</span>.
+          Se você ja trabalhou com Bootstrap ou Materialize, você não encontrará dificuldades em trabalhar com o
+          nosso sistema de grid. Caso esse seja seu primeiro framework, não se preocupe, após ler esta seção
+          você será capaz de trabalhar com o sistema de grid.
+        </p>
+
+        <div class="col-12 md-12" style="margin-top:50px">
+          <h3>Classes</h3>
+          <p>
+            As colunas do sistema de grid se adapta de acordo com a largura do navegador.
+            Então existem 4 classes que são ativadas de acordo com o dispositivos. Veja a
+            tabela abaixo 
+          </p>
+          <div class="responsive">
+            <table class="highlight">
+              <thead class="red">
+                <tr class="t-white">
+                  <th>Máximo de pixel</th>
+                  <th>Dispositivo</th>
+                  <th>Classe</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nenhum (auto)</td>
+                  <td>&lt;576px</td>
+                  <td class="t-orange-darken">col-*</td>
+                </tr>
+                <tr>
+                  <td>540px</td>
+                  <td>≥576px</td>
+                  <td class="t-orange-darken">sm-*</td>
+                </tr>
+                <tr>
+                  <td>720px</td>
+                  <td>≥768px</td>
+                  <td class="t-orange-darken">md-*</td>
+                </tr>
+                <tr>
+                  <td>960px</td>
+                  <td>≥992px</td>
+                  <td class="t-orange-darken">lg-*</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+ 
+        <div class="col-12 sm-12 md-12" style="margin-top:50px">
+          <h3>Colunas</h3>
+          <p>
+            O sistema de grid possui 12 colunas independente do dispositivo seja ele
+            grande ou pequeno. Toda coluna possui o mesmo tamanho e para iniciar a manipulação
+            das colunas basta adicionar uma <span class="t-blue t-bold">div</span> com a classe
+            <span class="t-bold t-red">row</span>) e em seguida adicionar novas <span class="t-blue t-bold">div</span>
+            com uma ou mais classe das colunas com a numeração entre 1 à 12, por exemplo <span class="t-red t-bold">col-6</span>.
+            Vale lembrar que a soma de colunas de uma classe dentro de uma <span class="t-bold t-red">row</span>
+            não pode ser superior a 12.
+          </p>
+          <div class="row">
+            <div class="col-1 block-grid">1</div>
+            <div class="col-1 block-grid">2</div>
+            <div class="col-1 block-grid">3</div>
+            <div class="col-1 block-grid">4</div>
+            <div class="col-1 block-grid">5</div>
+            <div class="col-1 block-grid">6</div>
+            <div class="col-1 block-grid">7</div>
+            <div class="col-1 block-grid">8</div>
+            <div class="col-1 block-grid">9</div>
+            <div class="col-1 block-grid">10</div>
+            <div class="col-1 block-grid">11</div>
+            <div class="col-1 block-grid">12</div>
+          </div>
+          <div class="col-12 sm-12 md-7">
+            <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col-1">1&lt;/div>
+    &lt;div class="col-1">2&lt;/div>
+    &lt;div class="col-1">3&lt;/div>
+    &lt;div class="col-1">4&lt;/div>
+    &lt;div class="col-1">5&lt;/div>
+    &lt;div class="col-1">6&lt;/div>
+    &lt;div class="col-1">7&lt;/div>
+    &lt;div class="col-1">8&lt;/div>
+    &lt;div class="col-1">9&lt;/div>
+    &lt;div class="col-1">10&lt;/div>
+    &lt;div class="col-1">11&lt;/div>
+    &lt;div class="col-1">12&lt;/div>
+  &lt;/div>
+            </code></pre>
+          </div>
+        </div>
+        <div class="col-12 sm-12 md-12" style="margin-top:50px">
+          <h3>Responsividade</h3>
+          <p>
+            Para tornar seu website responsivo, é necessário combinar as classes, ou seja, usar
+            mais de uma classe. Veja um exemplo abaixo (se tiver pelo navegador, reduza a largura):
+          </p>
+          <div class="row">
+            <div class="col-12 sm-6 md-3 block-grid">col-12 sm-6 md-3</div>
+            <div class="col-12 sm-6 md-3 block-grid">col-12 sm-6 md-3</div>
+            <div class="col-12 sm-6 md-3 block-grid">col-12 sm-6 md-3</div>
+            <div class="col-12 sm-6 md-3 block-grid">col-12 sm-6 md-3</div>
+          </div>
+          <div class="col-12 sm-12 md-7">
+            <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col-12 sm-6 md-3">col-12 sm-6 md-3&lt;/div>
+    &lt;div class="col-12 sm-6 md-3">col-12 sm-6 md-3&lt;/div>
+    &lt;div class="col-12 sm-6 md-3">col-12 sm-6 md-3&lt;/div>
+    &lt;div class="col-12 sm-6 md-3">col-12 sm-6 md-3&lt;/div>
+  &lt;/div>
+            </code></pre>
+          </div>
+        </div>
+        
+        <div class="col-12 sm-12 md-12" style="margin-top:50px">
+          <h3>Classes de deslocamento de colunas</h3>
+          <p>
+            As classes com o prefixo <span class="t-red t-bold">push-*</span>, são usadas para deslocar
+            colunas para a direita. Cada classe para criar colunas possui um <span class="t-red t-bold">push</span>
+            correspondente, por exemplo: a classe <span class="t-red t-bold">col-*</span> possui a classe 
+            <span class="t-red t-bold">push-*</span> como correspondente, classe <span class="t-red t-bold">sm-*</span>
+            possui a <span class="t-red t-bold">push-sm-*</span> e assim por diante. Além disso, todas as classes
+            de deslocamento <span class="t-red t-bold">push-*</span> vão de 0 a 11. A tabela abaixo apresenta as classes
+            de colunas e as classe de deslocamento correspondente.
+          </p>
+          <div class="col-12 sm-12 md-10 push-md-1 lg-8 push-lg-2">
+            <div class="responsive">
+              <table class="highlight">
+                <thead class="red">
+                  <tr class="t-white">
+                    <th>Class. de colunas</th>
+                    <th>class. de deslocamento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>col-*</td>
+                    <td>push-*</td>
+                  </tr>
+                  <tr>
+                    <td>sm-*</td>
+                    <td>push-sm-*</td>
+                  </tr>
+                  <tr>
+                    <td>md-*</td>
+                    <td>push-md-*</td>
+                  </tr>
+                  <tr>
+                    <td>lg-*</td>
+                    <td>push-lg-*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 sm-12 md-12" style="margin-top:50px">
+          <h3>Deslocamento de coluna</h3>
+          <p>
+            Abaixo é demonstrado um exemplo de deslocamento da coluna de classe <span class="t-red t-bold">lg-2</span>
+            que desloca 8 colunas (<span class="t-red t-bold">push-lg-8</span>). Note que a coluna irá para o final da linha.
+            Isso se dá devido que anterior a ela existe uma coluna de tamanho 2 que se somando com o deslocamento é igual a 10
+            por isso a coluna de tamanho dois (somado é igual a 12) vai para o final. Se você diminuir a tela, o deslocamento
+            deixará de existir, pois, o mesmo só se aplica ao dispositivo de largura <span class="t-blue t-bold">≥992px</span>.
+          </p>
+          <div class="row">
+              <div class="col-2 md-2 lg-2 block-grid">col-2 md-2 lg-2</div>
+              <div class="col-2 md-2 lg-2 push-lg-8 block-grid">col-2 md-2 lg-2 push-lg-8</div>
+          </div>
+          <div class="col-12 sm-12 md-7">
+            <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col-2 md-2 lg-2">col-2 md-2 lg-2&lt;/div>
+    &lt;div class="col-2 md-2 lg-2 push-lg-8">col-2 md-2 lg-2 push-lg-8&lt;/div>
+  &lt;/div>
+            </code></pre>
+          </div>
+        </div>
+        <div class="col-12 sm-12 md-12" style="margin-top:50px">
+          <h3>Desabilitando deslocamento para classes</h3>
+          <p>
+            Em alguns casos, o deslocamento pode ser aplicado a mais de uma classe de coluna
+            e de certa forma pode afetar o que você deseja fazer, para isso, todas as classes
+            de deslocamento possui um valor que desabilita o deslocamento. Como citado anteriormente,
+            os valores das classes de deslocamento vão de <span class="t-bold">0 à 11</span>, as classes
+            que termina com <span class="t-bold">0</span> desabilita o deslocamento. Veja abaixo um exemplo
+            onde o deslocamento <span class="t-red t-bold">push-md-6</span> afeta as classes
+            <span class="t-red t-bold">md-*</span> e <span class="t-red t-bold">lg-*</span>.
+          </p>
+          <div class="row">
+              <div class="col-3 md-3 lg-3 block-grid">col-3 md-3 lg-3</div>
+              <div class="col-3 md-3 lg-3 push-md-6 block-grid">col-3 md-3 lg-3 push-md-6</div>
+          </div>
+          <p>
+            Para solucionar este problema basta adicionar a classe <span class="t-red t-bold">push-lg-0</span>
+            desabilitando assim o deslocamento para as classes <span class="t-red t-bold">lg-*</span>
+          </p>
+          <div class="row">
+              <div class="col-3 md-3 lg-3 block-grid">col-3 md-3 lg-3</div>
+              <div class="col-3 md-3 lg-3 push-md-6 push-lg-0 block-grid">col-3 md-3 lg-3 push-md-6 push-lg-0</div>
+          </div>
+          <div class="col-12 sm-12 md-7">
+            <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col-3 md-3 lg-3">col-3 md-3 lg-3&lt;/div>
+    &lt;div class="col-3 md-3 lg-3 push-md-6 push-lg-0">col-3 md-3 lg-3 push-md-6 push-lg-0&lt;/div>
+  &lt;/div>
+            </code></pre>
+          </div>
+        </div>
+        <div class="col-12 sm-12 md-12" style="margin-top:50px">
+          <h3>Coluna dentro de coluna</h3>
+          <p>
+            As vezes você quer adicionar uma coluna de tamanho x, e dentro dessa coluna você quer adicionar
+            outras colunas uma abaixo da outra, até aí, sem problemas. Porém, você deseja adicionar uma coluna
+            do lado da outra ou varios colunas lado a lado. Para que você consiga fazer isso, é preciso adicionar
+            uma nova linha (classe <span class="t-red t-bold">row</span>). Veja um exemplo abaixo:
+          </p>
+          <div class="row">
+            <div class="col-12 md-12 block-grid-main">
+                <p>Coluna de tamanho 12 (coluna mãe)</p>
+              <div class="row">
+                <div class="col-6 md-6 block-grid">Coluna dentro de outra coluna (filha)</div>
+                <div class="col-6 md-6 block-grid">Coluna dentro de outra coluna (filha)</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 sm-12 md-7">
+            <pre><code class="language-markup">
+  &lt;div class="row">
+    &lt;div class="col-12 md-12">
+      &lt;p>Coluna de tamanho 12 (coluna mãe)&lt;/p>
+      &lt;div class="row">
+        &lt;div class="col-6 md-6">Coluna dentro de outra coluna (filha)&lt;/div>
+        &lt;div class="col-6 md-6">Coluna dentro de outra coluna (filha)&lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+            </code></pre>
+          </div>
+        </div>
+
+
+      </div>
+      
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

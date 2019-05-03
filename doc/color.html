@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+  <style>
+  .block-color {
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+  }
+
+  .color-set {
+    width: 100%;
+    height: 150;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 400;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção aprenderemos a usar as cores (ver <spna class="t-grey">Paleta de cores</spna> abaixo)
+          no texto e no fundo.
+        </p>
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Cor de fundo</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            Para aplicar uma cor de fundo, basta adicionar o nome da cor como uma classe do elemento. 
+            <div class="card blue-light">Cor de fundo blue-light</div>
+            <pre><code class="language-markup">
+&lt;div class="card blue-light">Cor de fundo blue-light&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Cor do texto</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+              Para aplicar uma cor no texto, deve-se adicionar <span class="t-blue t-bold">t-</span> antes do nome da cor como classe do elemento. 
+            <div class="card t-blue">Cor do texto t-blue</div>
+            <pre><code class="language-markup">
+&lt;div class="card t-blue">Cor do texto t-blue&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 sm-12 md-12 lg-12">
+          <h3><span class="t-light t-grey">#</span> Paleta de cores</h3>
+        <div class="row">
+          <div class="lg-3 md-4">
+            <h4>Red</h4>
+            <div class="color-set t-white">
+              <div class="block-color red-light">red-light</div>
+              <div class="block-color red">red</div>
+              <div class="block-color red-darken">red-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Pink</h4>
+            <div class="color-set t-white">
+              <div class="block-color pink-light">pink-light</div>
+              <div class="block-color pink">pink</div>
+              <div class="block-color pink-darken">pink-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Purple</h4>
+            <div class="color-set t-white">
+              <div class="block-color purple-light">purple-light</div>
+              <div class="block-color purple">purple</div>
+              <div class="block-color purple-darken">purple-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Indigo</h4>
+            <div class="color-set t-white">
+              <div class="block-color indigo-light">indigo-light</div>
+              <div class="block-color indigo">indigo</div>
+              <div class="block-color indigo-darken">indigo-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Blue</h4>
+            <div class="color-set t-white">
+              <div class="block-color blue-light">blue-light</div>
+              <div class="block-color blue">blue</div>
+              <div class="block-color blue-darken">blue-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Cyan</h4>
+            <div class="color-set t-white">
+              <div class="block-color cyan-light">cyan-light</div>
+              <div class="block-color cyan">cyan</div>
+              <div class="block-color cyan-darken">cyan-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Teal</h4>
+            <div class="color-set t-white">
+              <div class="block-color teal-light">teal-light</div>
+              <div class="block-color teal">teal</div>
+              <div class="block-color teal-darken">teal-darken</div>
+            </div>
+          </div>
+        
+          <div class="lg-3 md-4">
+            <h4>Green</h4>
+            <div class="color-set t-white">
+              <div class="block-color green-light">green-light</div>
+              <div class="block-color green">green</div>
+              <div class="block-color green-darken">green-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Lime</h4>
+            <div class="color-set text-black">
+              <div class="block-color lime-light">lime-light</div>
+              <div class="block-color lime">lime</div>
+              <div class="block-color lime-darken">lime-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Yellow</h4>
+            <div class="color-set text-black">
+              <div class="block-color yellow-light">yellow-light</div>
+              <div class="block-color yellow">yellow</div>
+              <div class="block-color yellow-darken">yellow-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Amber</h4>
+            <div class="color-set text-black">
+              <div class="block-color amber-light">amber-light</div>
+              <div class="block-color amber">amber</div>
+              <div class="block-color amber-darken">amber-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Orange</h4>
+            <div class="color-set t-white">
+              <div class="block-color orange-light">orange-light</div>
+              <div class="block-color orange">orange</div>
+              <div class="block-color orange-darken">orange-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Brown</h4>
+            <div class="color-set t-white">
+              <div class="block-color brown-light">brown-light</div>
+              <div class="block-color brown">brown</div>
+              <div class="block-color brown-darken">brown-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Grey</h4>
+            <div class="color-set t-white">
+              <div class="block-color grey-light t-black">grey-light</div>
+              <div class="block-color grey">grey</div>
+              <div class="block-color grey-darken">grey-darken</div>
+            </div>
+          </div>
+    
+          <div class="lg-3 md-4">
+            <h4>Others</h4>
+            <div class="color-set">
+              <div class="block-color black" > <span style="color:white">black</span></div>
+              <div class="block-color white">white</div>
+              <div class="block-color transparent">transparent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

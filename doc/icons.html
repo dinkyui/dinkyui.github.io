@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta etapa iremos apresentar as opções que você pode optar para usar icones em seus projetos
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Font Awesome</h3>
+          <p>
+            A primeira opção para usar icones é a Font Awesome, você pode acessar o site
+            para ler sobre ele ou visualizar os icones disponíveis <a href="https://fontawesome.com/">clicando aqui</a>.
+            <br>
+            Para usá-lo, basta importar no cabeçalho do seu HTML o Font Awesome da seguinte forma: 
+          </p>
+          <pre><code class="language-markup">
+&lt;!DOCTYPE html>
+&lt;html lang="pt-br">
+&lt;head>
+  ...
+  &lt;!-- importando font awesome -->
+  &lt;link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  ...
+&lt;/head>
+&lt;body>
+  ...
+&lt;/body>
+&lt;/html>
+          </code></pre>
+          <p>
+            Caso não funcione, acesse a documentação <a href="https://fontawesome.com/start">clicando aqui</a>
+            e veja como adicionar por CDN.
+            <br>
+            Com o Font Awesome importado, está na hora de testar. Acesse a galeria de icones <a href="https://fontawesome.com/icons?d=gallery">clicando aqui</a>
+            procure o icone que você deseja importar e use da seguinte forma. Veja um exemplo:
+          </p>
+          <i class="fas fa-home"></i>
+          <br>
+          <pre><code class="language-markup">
+&lt;i class="fas fa-home">&lt;/i>
+          </code></pre>
+          <p>
+            Bem simples, basta adicionar uma classe que inicie sempre com <span class="t-red t-bold">fas </span> seguido do icone que você pode
+            obter na galeria do Font Awesome que normalmente começa com <span class="t-red t-bold">fa-*</span>.
+            <br><br>
+            <h5>Cor</h5>
+            Para alterar a cor é da mesma forma quando queremos alterar a cor de um texto, inicia uma nova classe com
+            <span class="t-red t-bold">t-</span> em seguida o nome da cor que deseja. Veja:
+          </p>
+          <i class="fas fa-home t-red"></i>
+          <br>
+          <pre><code class="language-markup">
+&lt;i class="fas fa-home t-red">&lt;/i>
+          </code></pre>
+          <h5>Tamanho</h5>
+          <p>
+            Para aumentar ou diminuir um icone, você pode criar novas classe CSS ou fazer diretamente no elemento
+            alterando o <span class="t-orange t-bold">font-size</span>. Veja um exemplo:
+          </p>
+          <i class="fas fa-home" style="font-size:40px"></i>
+          <br>
+          <pre><code class="language-markup">
+&lt;i class="fas fa-home" style="font-size: 40px">&lt;/i>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h3>Material Design</h3>
+          <p>
+            Outra opção para usar icones é a Material Design, você pode acessar o site
+            para ler sobre ele ou visualizar os icones disponíveis <a href="https://material.io/">clicando aqui</a>.
+            <br>
+            Para usá-lo, basta importar no cabeçalho do seu HTML o Font Awesome da seguinte forma: 
+          </p>
+          <pre><code class="language-markup">
+&lt;!DOCTYPE html>
+&lt;html lang="pt-br">
+&lt;head>
+  ...
+  &lt;!-- importando material design -->
+  &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  ...
+&lt;/head>
+&lt;body>
+  ...
+&lt;/body>
+&lt;/html>
+          </code></pre>
+          <p>
+            Caso não funcione, acesse a documentação <a href="http://google.github.io/material-design-icons/">clicando aqui</a>
+            e veja como adicionar via google fonts.
+            <br>
+            Com o Material Design importado, está na hora de testar. Acesse a galeria de icones <a href="https://material.io/tools/icons/?style=baseline">clicando aqui</a>
+            procure o icone que você deseja importar e use da seguinte forma. Veja um exemplo:
+          </p>
+          <i class="material-icons">favorite</i>
+          <br>
+          <pre><code class="language-markup">
+&lt;i class="material-icons">favorite&lt;/i>
+          </code></pre>
+          <p>
+            Bem simples, basta adicionar a classe <span class="t-red t-bold">material-icons</span> e entre as tags de 
+            abertura do elemento <span class="t-red t-bold">i</span> adicione o nome do icone.
+            <br><br>
+            <h5>Cor</h5>
+            Para alterar a cor é da mesma forma quando queremos alterar a cor de um texto, inicia uma nova classe com
+            <span class="t-red t-bold">t-</span> em seguida o nome da cor que deseja. Veja:
+          </p>
+          <i class="material-icons t-blue">favorite</i>
+          <br>
+          <pre><code class="language-markup">
+&lt;i class="material-icons t-blue">favorite&lt;/i>
+          </code></pre>
+          <h5>Tamanho</h5>
+          <p>
+            Para aumentar ou diminuir um icone, você pode criar novas classe CSS ou fazer diretamente no elemento
+            alterando o <span class="t-orange t-bold">font-size</span>. Veja um exemplo:
+          </p>
+          <i class="material-icons" style="font-size:40px">favorite</i>
+          <br>
+          <pre><code class="language-markup">
+&lt;i class="material-icons" style="font-size:40px">favorite&lt;/i>
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

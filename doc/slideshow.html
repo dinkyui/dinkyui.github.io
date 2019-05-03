@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>Nesta seção aprenderemos como usar slideshow em seu projeto</p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Inserindo Slideshow</h4>
+          <p>
+            Abaixo é apresentado um slideshow. Fique atento para os <span class="t-orange t-bold">id</span> nos elementos
+            <span class="t-blue t-bold">input</span>, pois esses  IDs são referênciados no <span class="t-orange t-bold">for</span>
+            dos itens (<span class="t-blue t-bold">li</span>) da lista não ordenada <span class="t-blue t-bold">ul</span>.
+            Além disso, são esse elementos citados, que criam as "bolinhas" no slideshow que linka as fotos. Caso tenha mais de 3 fotos
+            basta adicionar um bloco de código, trocar a imagem e o ID do <span class="t-blue t-bold">input</span> e
+            adicionar mais um item na lista não ordernada com o ID referenciado no <span class="t-orange t-bold">for</span>
+          </p>
+          <div class="slider-wrapper">
+            <div class="slider">
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow" id="img-1" class="trigger" checked="checked">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod dui sed ex sodales pulvinar.
+                      Quisque vestibulum, ante at luctus cursus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow" id="img-2" class="trigger">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2015/07/27/17/14/switzerland-862870_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped slide-caption-left">
+                    <p>
+                      Nullam venenatis semper nunc, at interdum libero dictum vel. Nunc ac magna mattis, accumsan elit vel,
+                      vehicula purus. Curabitur vitae nisi non nulla blandit maximus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow" id="img-3" class="trigger">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2016/04/03/02/28/rio-1303951_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped slide-caption-right">
+                    <p>
+                      tincidunt. Cras congue dolor sed est aliquam, eget facilisis neque molestie. Donec elit est, semper in
+                      commodo sit amet, aliquet ut lectus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <ul class="slider-nav slider-nav">
+                                                                                                          <!-- os Ids são referenciados no for -->
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-1"></label></li>
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-2"></label></li>
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-3"></label></li>
+            </ul>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="slider-wrapper">
+  &lt;div class="slider">
+
+    &lt;!-- Fique atento para o id -->
+    &lt;input type="radio" name="slidershow" id="img-1" class="trigger" checked="checked">
+    &lt;div class="slide">
+      &lt;div class="slide-figure">
+        &lt;img class="slide-img" src="https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_960_720.jpg">
+        &lt;div class="slide-caption slide-caption-taped">
+          &lt;p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod dui sed ex sodales pulvinar.
+            Quisque vestibulum, ante at luctus cursus.
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;!-- Fique atento para o id -->
+    &lt;input type="radio" name="slidershow" id="img-2" class="trigger">
+    &lt;div class="slide">
+      &lt;div class="slide-figure">
+        &lt;img class="slide-img" src="https://cdn.pixabay.com/photo/2015/07/27/17/14/switzerland-862870_960_720.jpg">
+        &lt;div class="slide-caption slide-caption-taped slide-caption-left">
+          &lt;p>
+            Nullam venenatis semper nunc, at interdum libero dictum vel. Nunc ac magna mattis, accumsan elit vel,
+            vehicula purus. Curabitur vitae nisi non nulla blandit maximus.
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;!-- Fique atento para o id -->
+    &lt;input type="radio" name="slidershow" id="img-3" class="trigger">
+    &lt;div class="slide">
+      &lt;div class="slide-figure">
+        &lt;img class="slide-img" src="https://cdn.pixabay.com/photo/2016/04/03/02/28/rio-1303951_960_720.jpg">
+        &lt;div class="slide-caption slide-caption-taped slide-caption-right">
+          &lt;p>
+            tincidunt. Cras congue dolor sed est aliquam, eget facilisis neque molestie. Donec elit est, semper in
+            commodo sit amet, aliquet ut lectus.
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+
+  &lt;/div>
+  &lt;ul class="slider-nav slider-nav">
+                                                              &lt;!-- os Ids são referenciados no for -->
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-1">&lt;/label>
+    &lt;/li>
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-2">&lt;/label>
+    &lt;/li>
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-3">&lt;/label>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Alinhamento dos labels (bolinahs)</h4>
+          <p>
+            Também é possível alinhar os labels (bolinhas) para direita ou para esquerda e o elemento chave
+            para esse alinhamento é a lista não ordenada. Veja os exemplos abaixo:
+          </p>
+          <h5>Alinhamento à direita</h5>
+          <div class="slider-wrapper">
+            <div class="slider">
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow-2" id="img-4" class="trigger" checked="checked">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod dui sed ex sodales pulvinar.
+                      Quisque vestibulum, ante at luctus cursus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow-2" id="img-5" class="trigger">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2015/07/27/17/14/switzerland-862870_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped slide-caption-left">
+                    <p>
+                      Nullam venenatis semper nunc, at interdum libero dictum vel. Nunc ac magna mattis, accumsan elit vel,
+                      vehicula purus. Curabitur vitae nisi non nulla blandit maximus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <ul class="slider-nav slider-nav-right">
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-4"></label></li>
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-5"></label></li>
+            </ul>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="slider-wrapper">
+  &lt;div class="slider">
+    &lt;!-- imagem 1 -->
+    ...
+    &lt;!-- imagem n -->
+  &lt;/div>
+  &lt;ul class="slider-nav slider-nav-right">
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-1">&lt;/label>
+    &lt;/li>
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-2">&lt;/label>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div>
+          </code></pre>
+          <h5>Alinhamento à esquerda</h5>
+          <div class="slider-wrapper">
+            <div class="slider">
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow-3" id="img-6" class="trigger" checked="checked">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod dui sed ex sodales pulvinar.
+                      Quisque vestibulum, ante at luctus cursus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fique atento para o id -->
+              <input type="radio" name="slidershow-3" id="img-7" class="trigger">
+              <div class="slide">
+                <div class="slide-figure">
+                  <img class="slide-img" src="https://cdn.pixabay.com/photo/2015/07/27/17/14/switzerland-862870_960_720.jpg">
+                  <div class="slide-caption slide-caption-taped slide-caption-left">
+                    <p>
+                      Nullam venenatis semper nunc, at interdum libero dictum vel. Nunc ac magna mattis, accumsan elit vel,
+                      vehicula purus. Curabitur vitae nisi non nulla blandit maximus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <ul class="slider-nav slider-nav-left">
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-6"></label></li>
+              <li class="slider-nav_item"><label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-7"></label></li>
+            </ul>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="slider-wrapper">
+  &lt;div class="slider">
+    &lt;!-- imagem 1 -->
+    ...
+    &lt;!-- imagem n -->
+  &lt;/div>
+  &lt;ul class="slider-nav slider-nav-left">
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-1">&lt;/label>
+    &lt;/li>
+    &lt;li class="slider-nav_item">
+      &lt;label class="slider-nav_label slider-nav_label-invert slider-nav_label-dot" for="img-2">&lt;/label>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div>
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

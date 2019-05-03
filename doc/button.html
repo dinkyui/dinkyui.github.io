@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção você aprenderá a utilizar os botões e suas classes em seu projeto 
+        </p>
+
+        <div class="col-12 md-12" style="margin-top:50px">
+          <h3>Botões e Cores</h3>
+          <p>
+            Para utilizar botões em seu projeto é bem simples, basta adicionar a classe
+            <span class="t-red t-bold">btn</span> nos elementos <span class="t-blue t-bold">&lt;button></span>
+            ou <span class="t-blue t-bold">&lt;a></span>. Como padrão a cor do botão é cinza, para aplicar
+            uma cor de fundo, basta adicionar o nome da cor como classe do elemento. Veja exemplos abaixo:
+          </p>
+          <button class="btn">Padrão</button>
+          <button class="btn red">red</button>
+          <button class="btn blue">blue</button>
+          <button class="btn green">green</button>
+          <button class="btn orange-darken">orange-darken</button>
+          <pre><code class="language-markup">
+  &lt;button class="btn">Padrão&lt;/button>
+  &lt;button class="btn red">red&lt;/button>
+  &lt;button class="btn blue">blue&lt;/button>
+  &lt;button class="btn green">green&lt;/button>
+  &lt;button class="btn orange-darken">orange-darken&lt;/button>
+          </code></pre>
+        </div>
+        <div class="col-12 md-12" style="margin-top:50px">
+          <h3>Botões somente borda</h3>
+          <p>
+            Existe outras classes que podem ser usadas em conjunto com a <span class="t-red t-bold">btn</span>,
+            Como por exemplo a classe com prefixo <span class="t-red t-bold">line-*</span> que deixa o botão
+            somente com uma determinada cor na borda. Essa classe deve ser combinada com uma cor que não possui
+            no nome as palavras <span class="t-orange t-bold">-light</span> ou <span class="t-orange t-bold">-darken</span>
+            como por exemplo: <span class="t-red t-bold">line-red</span>.
+          </p>
+          <button class="btn line-grey">line-grey</button>
+          <button class="btn line-red">line-red</button>
+          <button class="btn line-blue">line-blue</button>
+          <pre><code class="language-markup">
+  &lt;button class="btn line-grey">line-grey&lt;/button>
+  &lt;button class="btn line-red">line-red&lt;/button>
+  &lt;button class="btn line-blue">line-blue&lt;/button>
+          </code></pre>
+        </div>
+        <div class="col-12 md-12" style="margin-top:50px">
+          <h3>Botões gradientes</h3>
+          <p>
+            Outra classe que veremos agora é a classe com prefix <span class="t-red t-bold">gradient-*</span>,
+            assim como citado na classe anteriormente, essa classe deve ser combinada com as cores que não possui
+            as palavras <span class="t-orange t-bold">-light</span> ou <span class="t-orange t-bold">-darken</span>
+            no nome da cor.
+          </p>
+          <button class="btn gradient-green">gradient-green</button>
+          <button class="btn gradient-red">gradient-red</button>
+          <button class="btn gradient-blue">gradient-blue</button>
+          <pre><code class="language-markup">
+  &lt;button class="btn gradient-green">gradient-green&lt;/button>
+  &lt;button class="btn gradient-red">gradient-red&lt;/button>
+  &lt;button class="btn gradient-blue">gradient-blue&lt;/button>
+          </code></pre>
+        </div>
+        <div class="col-12 md-12" style="margin-top:50px">
+          <h3>Tamanho</h3>
+          <p>
+            Existem classes que podem ser usadas para manipular o tamanho dos botões,
+            são elas:<br>
+            <span class="t-red t-bold">btn-sm</span>: essa classe <span class="t-bold">diminui</span> o tamanho do botão padrão. <br> 
+            <span class="t-red t-bold">btn-lg</span>: essa classe <span class="t-bold">aumenta</span> o tamanho do botão padrão. <br> 
+            <span class="t-red t-bold">btn-block</span> essa classe faz com que o botão <span class="t-bold">ocupa 100%</span> da coluna disponibilizada.
+          </p>
+          <button class="btn red btn-sm">btn-sm</button> <br>
+          <button class="btn red btn-lg">btn-lg</button> <br>
+          <button class="btn red btn-block">btn-block</button> <br>
+          <pre><code class="language-markup">
+  &lt;button class="btn red btn-sm">btn-sm&lt;/button>
+  &lt;button class="btn red btn-lg">btn-lg&lt;/button>
+  &lt;button class="btn red btn-block">btn-block&lt;/button>
+          </code></pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção aprenderemos a usar Breadcrumbs que são links de volta para cada
+          página anterior pela qual o usuário navegou.
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Inserindo breadcrumbs</h4>
+          <p>
+            O uso de breadcrumbs é um dos mais simples de todos os componentes que você já viu,
+            veja abaixo um exemplo:
+          </p>
+          <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Documentação</a></li>
+            <li>Breadcrumbs</li>
+          </ul>
+          <pre><code class="language-markup">
+&lt;ul class="breadcrumb">
+  &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#">Documentação&lt;/a>&lt;/li>
+  &lt;li>Breadcrumbs&lt;/li>
+&lt;/ul>
+          </code></pre>
+          <p>
+            Para alterar a cor de fundo do breadcrumbs basta adicionar o nome de uma cor como classe
+            do elemento, veja um exemplo abaixo:
+          </p>
+          <ul class="breadcrumb orange-darken">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Documentação</a></li>
+            <li>Breadcrumbs</li>
+          </ul>
+          <pre><code class="language-markup">
+&lt;ul class="breadcrumb orange-darken">
+  &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#">Documentação&lt;/a>&lt;/li>
+  &lt;li>Breadcrumbs&lt;/li>
+&lt;/ul>
+          </code></pre>
+
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

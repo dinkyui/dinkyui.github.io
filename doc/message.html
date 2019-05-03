@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção aprenderemos a usar o componente de mensagem de alertas que pode ser usado
+          quando você precisar exibir uma mensagem sobre o status de uma operação.
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:50px">
+          <h4>Mensagem de alerta simples</h4>
+          <p>
+            O uso de mensagem de alerta é bem simples, porém, caso precise de recursos mais avançados
+            é necessário o uso de <span class="t-green t-bold">javascript</span>. Mais não se preocupe
+            ao longo desta seção daremos exemplos. Veja o exemplo de uma mensagem de alerta simples abaixo:
+          </p>
+          <div class="alert">
+            <p class="content">Esta é uma mensagem de alerta</p>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="alert">
+  &lt;p class="content">Esta é uma mensagem de alerta&lt;/p>
+&lt;/div>
+          </code></pre>
+          <p>
+            Para alterar a cor de fundo, basta adicionar o nome da cor como classe do elemento
+          </p>
+
+          <div class="alert blue">
+            <p class="content">Esta é uma mensagem de alerta</p>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="alert blue">
+  &lt;p class="content">Esta é uma mensagem de alerta&lt;/p>
+&lt;/div>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:50px">
+          <h4>Mensagem de alerta com javascript</h4>
+          <p>
+            Com javascript, nós iremos criar um botão close para fechar o alerta criado.
+            Porém, existe algumas formas de você adicionar tal código no seu projeto,
+            que pode ser o inline ou arquivo externo e a outra forma é utilizar o atributo nativo
+            <span class="t-orange t-bold">onclick</span> dos elementos.
+          </p>
+          <h5>Usando o onclick</h5>
+          <div class="alert red">
+            <span class="alert-close" onclick="this.parentElement.style.display='none';">×</span>
+            <p class="content">Esta é uma mensagem de alerta com botão de close</p>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="alert red">
+  &lt;span class="alert-close" onclick="this.parentElement.style.display='none';">×&lt;/span>
+  &lt;p class="content">Esta é uma mensagem de alerta com botão de close&lt;/p>
+&lt;/div>
+          </code></pre>
+          <h5>Usando arquivo externo ou inline</h5>
+
+          <div class="alert green">
+            <span class="alert-close">×</span>
+            <p class="content">Esta é uma mensagem de alerta com botão de close</p>
+          </div>
+          <script>
+            let alert_message = document.getElementsByClassName('alert-close');
+            for (let i = 0; i < alert_message.length; i++) {
+              alert_message[i].addEventListener('click', () => {
+                alert_message[i].parentElement.style.display = 'none';
+              });
+            }
+          </script>
+          <pre><code class="language-markup">
+&lt;div class="alert green">
+  &lt;span class="alert-close">×&lt;/span>
+  &lt;p class="content">Esta é uma mensagem de alerta com botão de close&lt;/p>
+&lt;/div>
+          </code></pre>
+          <pre><code class="language-javascript">
+let alert_message = document.getElementsByClassName('alert-close');
+for (let i = 0; i &lt; alert_message.length; i++) {
+  alert_message[i].addEventListener('click', () => {
+    alert_message[i].parentElement.style.display = 'none';
+  });
+}
+          </code></pre>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

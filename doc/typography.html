@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção veremos as 6 tags de cabeçalho, como usar a paleta de cores e classes 
+          que podem ser usadas como alinhar texto à direita, centralizar e etc...
+        </p>
+      </div>
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h3>Tags de cabeçalhos</h3>
+        <div class="col-12 sm-12 md-5 lg-4">
+          <div class="card">
+            <h1>Header h1</h1>
+            <h2>Header h2</h2>
+            <h3>Header h3</h3>
+            <h4>Header h4</h4>
+            <h5>Header h5</h5>
+            <h6>Header h6</h6>
+          </div>
+        </div>
+      </div>
+      <!-- Alinhamento de texto -->
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h3>Alinhamento de texto</h3>
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Texto à direita</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            A classe <span class="t-red t-bold">right</span> alinha o texto à direita. 
+            <div class="card right">texto à direita</div>
+            <pre><code class="language-markup">
+&lt;div class="card right">texto à direita&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Texto à esquerda</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            Por padrão todo texto é à esquerda, porém, caso precise a classe
+            <span class="t-red t-bold">left</span> alinha o texto à esquerda. A mesma
+            pode ser omitida. 
+            <div class="card left">texto à esquerda</div>
+            <pre><code class="language-markup">
+&lt;div class="card left">texto à esquerda&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Texto centralizado</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            A classe <span class="t-red t-bold">center</span> centraliza o texto
+            <div class="card center">texto centralizado</div>
+            <pre><code class="language-markup">
+&lt;div class="card center">texto centralizado&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Texto justificado</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            A classe <span class="t-red t-bold">justify</span> alinha o texto de forma justificado
+            <div class="card justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra pharetra eros,
+              ac luctus lacus pulvinar eu. Sed hendrerit volutpat purus, sagittis lobortis mi aliquam ac.
+            </div>
+            <pre><code class="language-markup">
+&lt;div class="card justify">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra pharetra eros,
+  ac luctus lacus pulvinar eu. Sed hendrerit volutpat purus, sagittis lobortis mi aliquam ac.
+&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- Espessura da fonte -->
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h3>Espessura da fonte</h3>
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Espessura leve</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            A classe <span class="t-red t-bold">t-light</span> torna a espessura da fonte leve.
+            Esse tipo de fonte é a padrão mais podem ser usada em elementos como os de cabeçalho.
+            <div class="card">
+              <h1>H1 normal</h1>
+              <h1 class="t-light">H1 t-light</h1>
+            </div>
+            <pre><code class="language-markup">
+&lt;div class="card">
+  &lt;h1>H1 normal&lt;/h1>
+  &lt;h1 class="t-light">H1 t-light&lt;/h1>
+&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Espessura regular</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            A classe <span class="t-red t-bold">t-regular</span> torna a espessura da fonte um pouco
+            mais forte que a leve.
+            <div class="card t-regular">Fonte regular</div>
+            <pre><code class="language-markup">
+&lt;div class="card t-regular">Fonte regular&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Espessura negrito</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            A classe <span class="t-red t-bold">t-bold</span> torna a espessura da fonte negrito.
+            <div class="card t-bold">Fonte negrito</div>
+            <pre><code class="language-markup">
+&lt;div class="card t-bold">Fonte negrito&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <!-- Espessura da fonte -->
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h3>Cor da fonte</h3>
+        <div class="row" style="margin-top:50px">
+          <div class="col-12 sm-12 md-5 lg-4 push-lg-1">
+            <h4>Alterando a cor da fonte</h4>
+          </div>
+          <div class="col-12 sm-12 md-7 lg-6">
+            Para alterar a cor da fonte, basta adicionar antes do nome da cor 
+            ( ver <a href="color.html">Paleta de cores</a> ) o prefixo <span class="t-red t-bold">t-</span>
+            como por exemplo <span class="t-red t-bold">t-green</span>.
+            <div class="card t-green">Texto com a classe t-green</div>
+            <pre><code class="language-markup">
+&lt;div class="card t-green">Texto com a classe t-green&lt;/div>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção aprenderemos como adicionar a barra de navegação (navbar) em nosso projeto.
+          <br>
+          <span class="t-bold">OBS:</span> todos os navbars possui o menu hamburgue, apesar deles são
+          serem exibidos nos exemplos abaixo quando a tela é reduzida.
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Navbar simples</h4>
+          <p>
+            Abaixo é apresentada a primeira barra de navegação que pode ser adicionada em seu 
+            projeto, trata-se de uma barra de navegação simples.
+          </p>
+          <nav class="simple-nav">
+            <!--<input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+              <i></i>
+              <i></i>
+              <i></i>
+            </label>-->
+            <div class="logo">
+              <a href="#">Logo</a>
+            </div>
+            <div class="nav-wrapper">
+              <ul>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
+            </div>
+          </nav>
+          <pre><code class="language-markup">
+&lt;nav class="simple-nav">
+  &lt;input type="checkbox" id="nav" class="hidden">
+  &lt;label for="nav" class="nav-btn">
+    &lt;i>&lt;/i>
+    &lt;i>&lt;/i>
+    &lt;i>&lt;/i>
+  &lt;/label>
+  &lt;div class="logo">
+    &lt;a href="#">Logo&lt;/a>
+  &lt;/div>
+  &lt;div class="nav-wrapper">
+    &lt;ul>
+      &lt;li>&lt;a href="#">Page 1&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Page 2&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav>
+          </code></pre>
+          <p>
+            Também é possível alterar a cor linha superior do navbar, basta adicionar o nome da cor
+            desejada como classe do elemento
+          </p>
+          <nav class="simple-nav orange">
+            <!--<input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+              <i></i>
+              <i></i>
+              <i></i>
+            </label>-->
+            <div class="logo">
+              <a href="#">Logo</a>
+            </div>
+            <div class="nav-wrapper">
+              <ul>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
+            </div>
+          </nav>
+          <pre><code class="language-markup">
+&lt;nav class="simple-nav orange">
+  ...
+&lt;/nav>
+          </code></pre>
+          
+        </div>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Outra opção de Navbar</h4>
+          <p>
+            Abaixo é apresentada outra opção de barra de navegação que pode ser adicionada em seu 
+            projeto. Diferente da anterior, essa barra de navegação possui uma cor de fundo que a preenche
+            totalmente.
+          </p> 
+          <nav class="navbar">
+            <!--<input type="checkbox" id="navbar-check">-->
+            <div class="navbar-header">
+              <div class="navbar-title">
+                <a href="#">Logo</a>
+              </div>
+            </div>
+            <!--<div class="navbar-btn">
+              <label for="navbar-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>-->
+            
+            <div class="navbar-links">
+              <a href="#">Page 1</a>
+              <a href="#">Page 2</a>
+            </div>
+          </nav>
+          <pre><code class="language-markup">
+
+&lt;nav class="navbar">
+  &lt;input type="checkbox" id="navbar-check">
+  &lt;div class="navbar-header">
+    &lt;div class="navbar-title">
+      &lt;a href="#">Logo&lt;/a>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="navbar-btn">
+    &lt;label for="navbar-check">
+      &lt;span>&lt;/span>
+      &lt;span>&lt;/span>
+      &lt;span>&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  
+  &lt;div class="navbar-links">
+    &lt;a href="#">Page 1&lt;/a>
+    &lt;a href="#">Page 2&lt;/a>
+  &lt;/div>
+&lt;/nav>
+        
+          </code></pre>
+          <p>
+            Também é possível alterar a cor de fundo do navbar, basta adicionar o nome da cor
+            desejada como classe do elemento
+          </p>
+          <nav class="navbar blue">
+            <!--<input type="checkbox" id="navbar-check">-->
+            <div class="navbar-header">
+              <div class="navbar-title">
+                <a href="#">Logo</a>
+              </div>
+            </div>
+            <!--<div class="navbar-btn">
+              <label for="navbar-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>-->
+            
+            <div class="navbar-links">
+              <a href="#">Page 1</a>
+              <a href="#">Page 2</a>
+            </div>
+          </nav>
+          <pre><code class="language-markup">
+
+&lt;nav class="navbar blue">
+  ...
+&lt;/nav>
+        
+          </code></pre>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção aprenderemos a usar elementos de loader, que são utilizados 
+          quando uma determinada tarefa está em processo de carregamento.
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Spinners</h4>
+          <p>
+            Spinner são elementos que ficam rodando infinitamente, que podem possui uma ou duas barras.
+          </p>
+          <h5>Uma barra</h5>
+          <div class="loader"></div>
+          <pre><code class="language-markup">
+&lt;div class="loader">&lt;/div>
+          </code></pre>
+          <h5>Duas barras</h5>
+          <div class="loader bar-2"></div>
+          <pre><code class="language-markup">
+&lt;div class="loader bar-2">&lt;/div>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Progress Bar</h4>
+          <p>
+            Progress Bar são elementos que podem ser usado quando dados são enviados ou recebidos
+            podendo representa o status da tarefa. Veja abaixo um exemplo:
+          </p>
+          <div class="progress-bar">
+            <span style="width: 25%"></span>
+          </div>
+
+          <pre><code class="language-markup">
+&lt;div class="progress-bar">
+  &lt;span style="width: 25%">&lt;/span>
+&lt;/div>
+          </code></pre>
+          <p>
+            É possível também alterar a cor da barra, para isso, basta adicionar o nome da cor
+            como classe do elemento <span class="t-blue t-bold">span</span>
+          </p>
+          <div class="progress-bar">
+            <span class="green" style="width: 70%"></span>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="progress-bar">
+  &lt;span class="green" style="width: 70%">&lt;/span>
+&lt;/div>
+          </code></pre>
+          <h5>Barra listrada</h5>
+          <p>
+            Outra possibilidade da Progress Bar é deixar a barra de carregamento listrada. Veja um exemplo:
+          </p>
+          <div class="progress-bar stripes">
+            <span class="blue" style="width: 90%"></span>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="progress-bar stripes">
+  &lt;span class="blue" style="width: 90%">&lt;/span>
+&lt;/div>
+          </code></pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

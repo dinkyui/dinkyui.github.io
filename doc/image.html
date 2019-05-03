@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>
+          Nesta seção apresentaremos as classes que podem ser usadas quando você estiver trabalhando com imagem.
+        </p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Thumbnail</h4>
+          <p>
+            Thumbnail é uma imagem pequena que representa uma maior (quando clicado a imagem
+            com o tamanho original é exibida).
+          </p>
+          <a href="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg" target="_blank">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg">
+          </a>
+          <pre><code class="language-markup">
+&lt;a href="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg" target="_blank">
+  &lt;img class="thumbnail" src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg">
+&lt;/a>
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Imagem avatar</h4>
+          <p>
+            Agora iremos apresentar uma classe para criar avatar com uma imagem.
+          </p>        
+          <img class="avatar" src="https://cdn.pixabay.com/photo/2016/11/29/09/32/concept-1868728_960_720.jpg">
+        
+          <pre><code class="language-markup">
+&lt;img class="avatar" src="https://cdn.pixabay.com/photo/2016/11/29/09/32/concept-1868728_960_720.jpg">
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Imagem arredondada</h4>
+          <p>
+            A proxíma classe que será apresentada, faz com que uma imagem (quadrada) fique arredonda.
+          </p>        
+          <img class="circle" width="300" height="300" src="https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254_960_720.jpg">
+        
+          <pre><code class="language-markup">
+&lt;img class="circle" width="300" height="300" src="https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254_960_720.jpg">
+          </code></pre>
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Efeito overlay</h4>
+          <p>
+            Este tipo de efeito, permite que seja inserido texto que será exibido como um cartão 
+            quando o mouse passa sobre a imagem. Por padrão o efeito overlay sempre ocorre de baixo
+            para cima (classe <span class="t-red t-bold">bottom</span> ) que pode ser omitida,
+            mas, podem ser adicionada classes que altera este comportamentp:
+          </p>
+          <div class="row">
+            <div class="col-12 md-4 push-md-1">  
+              <p>Default (ou classe <span class="t-red t-bold">bottom</span> )</p>                    
+              <div class="overlay-container">
+                <img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+                <div class="overlay-text">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 md-4 push-md-1">  
+              <p>Do topo para baixo (classe <span class="t-red t-bold">top</span> )</p>                    
+              <div class="overlay-container top">
+                <img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+                <div class="overlay-text">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 md-4 push-md-1" style="margin-top:10px">  
+              <p>Da esquerda para direita (classe <span class="t-red t-bold">left</span> )</p>                    
+              <div class="overlay-container left">
+                <img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+                <div class="overlay-text">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 md-4 push-md-1" style="margin-top:10px">  
+              <p>Da direita para esquerda (classe <span class="t-red t-bold">right</span> )</p>                    
+              <div class="overlay-container right">
+                <img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+                <div class="overlay-text">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre><code class="language-markup">
+&lt;!-- Classe bottom (pode ser omitida) -->
+&lt;div class="overlay-container bottom">
+  &lt;img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+  &lt;div class="overlay-text">
+    &lt;div class="text">Hello World&lt;/div>
+  &lt;/div>
+&lt;/div>
+&lt;!-- classe top -->
+&lt;div class="overlay-container top">
+  &lt;img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+  &lt;div class="overlay-text">
+    &lt;div class="text">Hello World&lt;/div>
+  &lt;/div>
+&lt;/div>
+&lt;!-- efeito left -->
+&lt;div class="overlay-container left">
+  &lt;img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+  &lt;div class="overlay-text">
+    &lt;div class="text">Hello World&lt;/div>
+  &lt;/div>
+&lt;/div>
+&lt;!-- efeito right -->
+&lt;div class="overlay-container right">
+  &lt;img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+  &lt;div class="overlay-text">
+    &lt;div class="text">Hello World&lt;/div>
+  &lt;/div>
+&lt;/div>
+          </code></pre>
+          <p>
+            Também é possível alterar a cor do cartão que desce junto com o texto, basta adicionar o 
+            nome da cor como classe da <span class="t-blue t-bold">div</span> que possui a classe
+            <span class="t-red t-bold">overlay-text</span>. Veja um exemplo abaixo:
+          </p>
+          <div class="overlay-container">
+            <img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+            <div class="overlay-text blue">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+          <pre><code class="language-markup">
+&lt;div class="overlay-container">
+  &lt;img src="https://cdn.pixabay.com/photo/2019/03/22/20/58/cat-4074160_960_720.jpg" alt="Avatar" class="overlay-image">
+  &lt;div class="overlay-text blue">
+    &lt;div class="text">Hello World&lt;/div>
+  &lt;/div>
+&lt;/div>     
+          </code>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>

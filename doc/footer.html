@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dinky UI CSS</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/prism.css">
+  <link rel="stylesheet" href="../css/dinkyui.css">
+</head>
+<body>
+  <nav class="navbar">
+    <input type="checkbox" id="navbar-check">
+    <div class="navbar-header">
+      <div class="navbar-title">
+        <img src="../img/logo-white.png" width="35" alt="Logo">
+        <a href="/">Dinky UI CSS</a>
+      </div>
+    </div>
+    <div class="navbar-btn">
+      <label for="navbar-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/doc.html">Documentação</a>
+    </div>
+  </nav>
+          
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 sm-12 md-12 lg-12">
+        <h2><span class="t-light t-grey">#</span> Uso</h2>
+        <p>Nesta seção aprenderemos como utilizar footer</p>
+
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Footer simples</h4>
+          <p>
+            Este footer consiste apenas em um texto centralizado com uma linha superior
+          </p>
+          <footer class="simple-footer">
+            <p>&copy; 2019 <span class="t-red-darken">My Website</span></p>
+          </footer>
+          <pre><code class="language-markup">
+&lt;footer class="simple-footer">
+  &lt;p>&copy; 2019 &lt;span class="t-red-darken">My Website&lt;/span>&lt;/p>
+&lt;/footer>
+          </code></pre>          
+        </div>
+        <div class="col-12 md-8 push-md-2" style="margin-top:80px">
+          <h4>Footer com grid</h4>
+          <p>
+            Existe outro footer que pode ser utilizado grids para acrescentar mais informações
+            sobre seu website. Veja um exemplo a seguir:
+          </p>          
+          <footer class="page">
+            <div class="content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 md-4 push-md-1">
+                    <div class="center">
+                      <h4>Content Footer</h4>
+                    </div>
+                    <p class="justify">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                  <div class="col-12 md-2 push-md-3">
+                    <h4>Link</h4>
+                    <ul class="circle">
+                      <li>
+                        <a href="#">Link</a>
+                      </li>
+                      <li>
+                        <a href="#">Link</a>
+                      </li>
+                      <li>
+                        <a  href="#">Link</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright center">
+              © 2019 <strong>Dinky UI</strong>. Todos os direitos reservados.
+            </div>
+          </footer>
+        
+          <pre><code class="language-markup">
+&lt;footer class="page">
+  &lt;div class="content">
+    &lt;div class="container">
+      &lt;div class="row">
+        &lt;div class="col-12 md-4 push-md-1">
+          &lt;div class="center">
+            &lt;h4>Content Footer&lt;/h4>
+          &lt;/div>
+          &lt;p class="justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p>
+        &lt;/div>
+        &lt;div class="col-12 md-2 push-md-3">
+          &lt;h4>Link&lt;/h4>
+          &lt;ul class="circle">
+            &lt;li>
+              &lt;a href="#">Link&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;a href="#">Link&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;a href="#">Link&lt;/a>
+            &lt;/li>
+          &lt;/ul>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="copyright center">
+    © 2019 &lt;strong>Dinky UI CSS&lt;/strong>. Todos os direitos reservados.
+  &lt;/div>
+&lt;/footer>
+          </code></pre>
+          <p>
+            Você pode alterar a cor do footer adicionando o nome de uma cor como classe do elemento.
+            Veja abaixo:
+          </p>
+          <footer class="page blue">
+            <div class="content"></div>
+            <div class="copyright center">
+              © 2019 <strong>Dinky UI</strong>. Todos os direitos reservados.
+            </div>
+          </footer>
+        
+          <pre><code class="language-markup">
+&lt;footer class="page blue">
+  &lt;div class="content">&lt;/div>
+  &lt;div class="copyright center">
+    © 2019 &lt;strong>Dinky UI CSS&lt;/strong>. Todos os direitos reservados.
+  &lt;/div>
+&lt;/footer>
+          </code></pre>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page">
+    <div class="content">
+    </div>
+    <div class="copyright center">
+      © 2019 <span class="t-bold">Dinky UI CSS</span>. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <script src="../js/prism.js"></script>
+</body>
+</html>
